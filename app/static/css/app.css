@@ -1,3 +1,110 @@
 body {
-    padding-top: 5rem;
+    font-family: Poppins, sans-serif;
+    padding-top: 4rem;
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 100%;
+    max-height: 100%;
+    
+    
+
+}
+
+.container{
+    padding: 2%;
+    
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 40%;
+    border-radius: 30px;
+    padding-bottom: 3%;
+    box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.25);
+}
+
+.profile-img-details{
+    background: radial-gradient(78.5% 78.5% at 50.16% 21.5%, rgba(0, 213, 99, 0) 0%, #00D563 29.17%);
+    border-radius: 30px;
+    padding-top: 5%;
+}
+.profile-img-details img{
+    
+    width: 40%;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.25);
+
+}
+
+.profile-img-details h1{
+    font-weight: bold;
+    font-weight: 700px;
+    font-size: 26px;
+    color:rgb(253, 247, 247);
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.profile-img-details-text{
+    line-height: 10px;
+    word-wrap: break-word;
+    color: #fff;
+}
+
+p{
+    font-size: 14px;
+    
+}
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+.profile-bio{
+    line-height: 25px;
+    word-wrap: break-word;
+    max-width: 90%;
+    padding-top:1%;
+    
+}
+
+.status{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10%;
+    align-items: center;
+    padding-bottom: 3%;
+    background-color: #fff;
+    
+}
+
+.number{
+    font-weight: bold;
+
+}
+.info{
+    display: flex;
+    flex-grow: 3;
+    gap: 15px;
+}
+
+button{
+    background-color: #7ed321;
+    color: #fff;
+    border: #fff;
+    border-radius: 5px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 1%;
+    padding-bottom: .5%;
+}
+.follow{
+    background-color: #fff
 }
