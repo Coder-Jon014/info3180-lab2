@@ -1,18 +1,18 @@
 body {
     font-family: Poppins, sans-serif;
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
+    padding-top: 5%;
     font-size: 14px;
     line-height: 1.5;
     max-width: 100%;
     max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    
     
     
 
-}
-
-.container{
-    padding: 2%;
-    
 }
 
 .profile{
@@ -25,6 +25,10 @@ body {
     border-radius: 30px;
     padding-bottom: 3%;
     box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.25);
+    margin-left: auto;
+    margin-right: auto;
+    
+    
 }
 
 .profile-img-details{
@@ -80,13 +84,14 @@ p{
     justify-content: center;
     column-gap: 10%;
     align-items: center;
-    padding-bottom: 3%;
+    /* padding-bottom: 3%; */
     background-color: #fff;
     
 }
 
 .number{
     font-weight: bold;
+    font-size: 18px;
 
 }
 .info{
