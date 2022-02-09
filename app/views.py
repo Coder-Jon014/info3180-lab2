@@ -6,7 +6,8 @@ This file creates your application.
 """
 
 from app import app
-from flask import render_template, request, redirect, url_for, flash
+from flask import render_template, request, redirect, url_for, flash, jsonify
+import datetime
 
 
 ###
@@ -24,11 +25,29 @@ def about():
     """Render the website's about page."""
     return render_template('about.html', name="Mary Jane")
 
-@app.route('/profile/')
+@app.route('/profile/', methods=['GET', 'POST'])
 def profile():
-    """Render the user's profile page.""""'"
-    return render_template('profile.html', name="Jon-Daniel Coombs")
+    profile = {
+        "name": "Jon-Daniel Coombs",
+        "username": "CoderJon-014",
+        "location": "Kingston, Jamaica",
+        "join_date": format_date_joined(join),
+        "about_me": "I am an UI/UX Designer and Web developer who loves to tinker around to create beautiful and innovative designs for applications. You have an idea? I'll design it for you. Feel free to contact me if you have any questions or comments.",
+        "posts" : "12",
+        "following" : "334",
+        "followers" : "201",
+    }
 
+    if request.method == "POST":
+        return (jsonify(profile))
+
+    return render_template('profile.html', profile=profile)
+
+join = datetime.date(2022, 10, 10)
+def format_date_joined(date):
+    return "Joined " + join.strftime('%B, %Y')
+
+print(format_date_joined(join))
 ###
 # The functions below should be applicable to all Flask apps.
 ###
